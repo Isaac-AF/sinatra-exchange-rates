@@ -1,0 +1,6 @@
+<h1>Currency pairs</h1>
+  <ul>
+  <%@parsed_data.fetch("currencies").each do |currency|%>
+    <li><a href="/<%=currency.at(0)%>">Convert 1 <%=currency.at(0)%> to...</a></li>
+  <%end%>
+  </ul>
